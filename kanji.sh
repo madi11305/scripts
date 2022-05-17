@@ -1,4 +1,6 @@
 #!/bin/sh
+# Replaces day of the week with the appropriate Kanji in my slstatus bar
+
 if [[ $(date "+%a") == "Sun" ]]
 then
 export day = "日"
