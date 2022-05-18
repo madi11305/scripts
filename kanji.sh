@@ -3,27 +3,27 @@
 
 if [[ $(date "+%a") == "Sun" ]]
 then
-export day = "日"
+export day="日"
 elif [[ $(date "+%a") == "Mon" ]]
 then
-export day = "月"
+export day="月"
 elif [[ $(date "+%a") == "Tue" ]]
 then
-export day = "火"
+export day="火"
 elif [[ $(date "+%a") == "Wed" ]]
 then
-export day = "水"
+export day="水"
 elif [[ $(date "+%a") == "Thu" ]]
 then
-export day = "木"
+export day="木"
 elif [[ $(date "+%a") == "Fri" ]]
 then
-export day = "金"
+export day="金"
 elif [[ $(date "+%a") == "Sat" ]]
 then
-export day = "土"
+export day="土"
 else
-export day = "error"
+export day="error"
 fi
 
 echo $day
