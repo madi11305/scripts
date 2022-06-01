@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# define wallpaper
+printf "Define path to wallpaper: "
+read wall
+
+# set wallpaper/pywal
+feh "$wall"
+wal -i "$wall"
