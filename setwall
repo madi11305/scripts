@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if ! echo "$1"
+then
+printf "Define path to wallpaper: "
+read 1
+fi
+
+feh "$1"
+wal -i "$1"
