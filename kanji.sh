@@ -1,29 +1,18 @@
 #!/bin/sh
 # Replaces day of the week with the appropriate Kanji in my slstatus bar
 
-if [[ $(date "+%a") == "Sun" ]]
-then
-export day="日"
-elif [[ $(date "+%a") == "Mon" ]]
-then
-export day="月"
-elif [[ $(date "+%a") == "Tue" ]]
-then
-export day="火"
-elif [[ $(date "+%a") == "Wed" ]]
-then
-export day="水"
-elif [[ $(date "+%a") == "Thu" ]]
-then
-export day="木"
-elif [[ $(date "+%a") == "Fri" ]]
-then
-export day="金"
-elif [[ $(date "+%a") == "Sat" ]]
-then
-export day="土"
-else
-export day="error"
-fi
+[ $(date "+%a") == "Sun" ] && day="日"
+
+[ $(date "+%a") == "Mon" ] && day="月"
+
+[ $(date "+%a") == "Tue" ] && day="火"
+
+[ $(date "+%a") == "Wed" ] && day="水"
+
+[ $(date "+%a") == "Thu" ] && day="木"
+
+[ $(date "+%a") == "Fri" ] && day="金"
+
+[ $(date "+%a") == "Sat" ] && day="土"
 
 echo $day
