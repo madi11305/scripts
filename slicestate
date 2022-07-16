@@ -1,0 +1,6 @@
+#!/bin/sh
+# Ouptuts charging state and remaning capacity of slice battery (external)
+
+echo "Slice Battery [BAT1]: "
+echo "State: $(cat /sys/class/power_supply/BAT1/status)"
+echo "Charge: $(cat /sys/class/power_supply/BAT1/capacity)%"

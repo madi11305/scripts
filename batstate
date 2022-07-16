@@ -1,0 +1,6 @@
+#!/bin/sh
+# Ouputs charging state and remaining capacity of main lapop battery
+
+echo "Battery [BAT0]: "
+echo "State: $(cat /sys/class/power_supply/BAT0/status)"
+echo "Charge: $(cat /sys/class/power_supply/BAT0/capacity)%"
